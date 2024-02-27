@@ -98,4 +98,52 @@ Vengono registrate e possono essere utilizzate come criterio di ricerca. Questo 
 1. Identificare i **Processi** richiesti per la gestione del progetto:
 	- Procedure e best practices definiti dai framework di qualità presenti in azienda o richiesti dal Cliente (*es. ISO 9001...*)
 	- Vincoli imposti dal cliente (*SLA, info richieste da contratto*,...)
-	- Modalità di gestione del progetto del Team
+	- Modalità di gestione del progetto del Team (Waterfall, Agile Scrum, Agile Kanban, altro...)
+2. Identificare e configurare gli strumenti che permettono di implementare i processi (ITS)
+	- Identificazione e definizione dei **tipi**, dei **campi custom**, dei **work flow** e dei **collegamenti** che ci permettono di tracciare le informazioni richieste dal processo
+	
+![[Pasted image 20240227183528.png]]
+##### Configurazione
+**Admin** ITS: 
+- Crea un nuovo progetto
+- Definisce il processo da seguire:
+	- Tipi di *work item*, campi custom, work flow, collegamenti
+	- Seleziona il modello di stima
+	- Differenti Board e Report per processo
+- Aggiunge gli utenti e assegnazione ruoli/permessi
+**Capoprogetto:**
+- Definisce le versioni (*release*)
+- Definisce le componenti del progetto
+- Definisce il lavoro da svolgere (*backlog*)
+	- Priorità
+	- Assegnatario
+	- Stima
+- Definisce la prima iterazione
+- Monitora l'avanzamento e il completamento delle attività (filtri, board, Dashboard, Report)
+- Definisce le nuove versioni
+- Definisce le nuove iterazioni
+- Definisce e aggiorna e monitora le attività (*priorità, verifica stima/consuntivo*)
+- Produce i report richiesti dal cliente (*p.es. Calcolo SLA, release log, qualità delle versioni o dei componenti...*)
+**Team di sviluppo e utenti**:
+- Ricevono notifiche dei *work item* assegnati
+- Selezionano i *work item* in base alle priorità
+- Avviano e completano la lavorazione
+	- Avanzano gli stati del workflow
+	- Aggiornano la stima a finire
+	- Registrano il tempo impiegato
+- Documentano lo stato dell'attività (*commenti*) e compilano i campi nel work item
+- Completano tutte le attività presenti nell'iterazione
+- Effettuano il rilascio
+### ITS Benefici
+- Implementare un processo e verificarne l'adozione
+- Migliorare e misurare la qualità del progetto
+- Misurare e aumentare la soddisfazione del cliente
+- Migliorare la definizione delle responsabilità
+- Migliorare la comunicazione nel team di sviluppo e con il cliente;
+- Aumentare la produttività del team di sviluppo
+- Gestione del tempo e della produttività personale
+- Ridurre le spese e gli sprechi
+- No mail company
+
+
+
