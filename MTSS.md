@@ -2,7 +2,7 @@
 - [[Issue Tracking System]]
 	- [[Version Contol System (VCS)]]
 	- [[GIT]]
-- Il framework SCRUM
+- Il framework [[Scrum]]
 - Source Code Management
 - Testing Software & Automation
 - Processo di Build
