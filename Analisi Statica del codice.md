@@ -20,3 +20,26 @@ Simili ad un correttore ortografico, permettono di:
 - Misurare la percentuale di codice testato
 - Ricercare indicatori di parti incomplete
 ### Checkstyle
+Checkstyle è uno strumento di sviluppo che aiuta i programmatori a scrivere codice Java che aderisce a uno **standard di codifica**. Automatizza il processo di verifica del codice Java per risparmiare all'uomo questo noioso (ma importante) compito. Questo lo rende ideale per i progetti che desiderano **fornire uno standard di codifica**.
+Checkstyle può controllare molti aspetti del codice sorgente. Può trovare **problemi di progettazione** delle classi, problemi di progettazione dei metodi. Ha anche la capacità di controllare il layout del codice e i problemi di formattazione.
+### FindBugs/SpotBugs
+**FindBugs** è un programma che usa l'analisi statica per **trovare i bug nel codice Java**.
+**SpotBugs** è il successore spirituale di *FindBugs*, continuare dal punto in cui si è interrotto con il sostegno della sua comunità
+### PMD
+È un analizzatore statico di codice sorgente. **Individua i più comuni difetti di programmazione** come variabili inutilizzate, blocchi di cattura vuoti, creazione di oggetti non necessari, copia e incolla e così via. Si occupa principalmente di Java e Apex, ma supporta altri sei linguaggi.
+## SonarQube
+SonarQube è uno strumento di revisione automatica del codice per individuare bug, vulnerabilità e code smell nel codice. Può integrarsi con il flusso di lavoro esistente per consentire una **ispezione continua del codice** tra i rami del progetto e le richieste di pull.
+![[Screenshot 2024-05-03 alle 13.30.18.png]]
+### Funzionalità:
+- **storicizza** l'andamento della qualità
+- Permette di verificare se c'è un miglioramento o un deterioramento del progetto nel tempo
+- Permette di stabilire un **quality profile** da applicare al progetto
+- Permette di stabilire un **quality gate** per verificare se la qualità del progetto rispetta determinati standard
+- Le **issue** segnalate vengono classificate in base alla gravità
+- Le issue vengono classificate in:
+	- **vulnerabilità** -> Permette di valutare il livello di sicurezza del progetto (_security_)
+	- **bug** -> Permette di valutare l'affidabilità del progetto (_Reliability_)
+	- **Code Smell** -> Permette di valutare la manutenibilità del progetto (_Maintainability_)
+- Permette di revisionare le issue segnalate e segnare i falsi positivi
+![[Screenshot 2024-05-03 alle 13.42.03.png]]
+![[Screenshot 2024-05-03 alle 13.42.13.png]]
