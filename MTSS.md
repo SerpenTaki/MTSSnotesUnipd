@@ -5,7 +5,7 @@
 - Il framework [[Scrum]]
 - Source Code Management
 - [[Testing]] Software & Automation
-- Processo di Build
-- Continuos Delivery
+- Processo di Build [[Build Automation]]
+- Continuos Delivery -> [[Feedback Loop]]
 - Configuration Management
 
