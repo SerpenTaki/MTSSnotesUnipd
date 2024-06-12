@@ -1,22 +1,22 @@
-E' un **software di controllo versione distribuito** utilizzabile da interfaccia a riga di comando, creato da **Linus Torvalds** nel **2005**.
+È un **software di controllo versione distribuito** utilizzabile da interfaccia a riga di comando, creato da **Linus Torvalds** nel **2005**.
 La sua progettazione si ispirò a strumenti come BitKeeper e Monotone.
-Git è nato per essere un semplice strumento per facilitare lo **sviluppo del ==kernel Linux==** ed è diventato uno degli strumenti di controllo versione più diffusi.
+Git è nato per essere un semplice strumento per facilitare lo **sviluppo del** ==kernel Linux== ed è diventato uno degli strumenti di controllo versione più diffusi.
 ### Caratteristiche
 - **Branching and Merging**:
-	- E' incentivato lo sviluppo su Branch diversi
+	- È incentivato lo sviluppo su Branch diversi
 - **Piccolo e veloce**
 	- La maggior parte delle operazioni viene fatta in locale
-	- E' sviluppato in C. La velocità e la performance sono stati i requisiti primari
+	- È sviluppato in C. La velocità e la performance sono stati i requisiti primari
 - **Distribuito (per "_clone_" del repository):
 	- Backups multipli
-	- Possibilità di adottare diversi Work flow
+	- Possibilità di adottare diversi Workflow
 - **Integrità**
 	- Ogni commit è identificato da un ID (_checksum **SHA-1** di **40 caratteri** basato sul contenuto di file o della struttura della directory_) che ne garantisce l'integrità
 	- Non è possibile cambiare un commit senza modificare l'ID del commit stesso e dei commit successivi
 - **Staging Area**:
-	- E' stata aggiunta un'area di staging dove vengono validati i file modificati che potranno essere versionati con un commit.
+	- È stata aggiunta un'area di staging dove vengono validati i file modificati che potranno essere versionati con un commit.
 - **Free and Open Source**
-	- E' rilasciato con licenza *GNU Gerneral Public License version 2.0*
+	- È rilasciato con licenza *GNU General Public License version 2.0*
 	- Il codice sorgente è pubblico
 
 "... Git thinks of its data more like a **set of snapshots** of a miniature filesystem. Every
@@ -40,14 +40,14 @@ Un file in GIT può essere in uno dei seguenti stati:
 ## Installazione di Git
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 ## Configurazione di Git
-E' richiesta una configurazione iniziale dove vengono impostati username e l'email  da usare per ogni commit:
+È richiesta una configurazione iniziale dove vengono impostati username e l'email  da usare per ogni commit:
 ````Bash
 git config --global user.name "Bugs Bunny"
 git config --global user.email bugs@gmail.com
 ````
-E' possibile invocare il seguente comando per avere la lista di tutte le configurazioni
+È possibile invocare il seguente comando per avere la lista di tutte le configurazioni
 ````Shell
-git congig --list
+git config --list
 ````
 Le configurazioni possono essere fatte a vari livelli:
 - **System**: per l'intero sistema per tutti gli utenti
@@ -70,7 +70,7 @@ https://git-scm.com/docs/git-config
 **Aggiungere** i file nella staging area e creazione di una Snapshot
  `git add filename`
 **Commit** e salvataggio di una nuova versione nel repository locale
- `git commit --m "Fixing bug #22`
+ `git commit -m "Fixing bug #22"`
 **Rimuovere** un file dalla staging area senza perdere le modifiche
  `git restore --staged filename`
 **Rimuovere** le modifiche ad un file nella working area
@@ -79,7 +79,7 @@ https://git-scm.com/docs/git-config
 - Vedere lo _stato_ dei file workspace o nella staging area:
 ````Bash
 git status
-git status --s //(Short version)
+git status -s //(Short version)
 ````
 - Per vedere cos'è stato *modificato ma non è ancora nella staging area:*
 `git diff`
@@ -116,11 +116,13 @@ git remote -v
 
 -----------------------------
 La lista dei comandi base può essere recuperata da:
-https://education.github.com/git-cheat-sheet-education.pdf
-https://git-scm.com/docs/giteveryday
-https://git-scm.com/docs/user-manual.html
+- https://education.github.com/git-cheat-sheet-education.pdf
+- https://git-scm.com/docs/giteveryday
+- https://git-scm.com/docs/user-manual.html
+
 Sono presenti dei tutorial per provare i comandi di GIT:
-https://git-scm.com/book/it/v2
-https://git-scm.com/docs/gittutorial
+- https://git-scm.com/book/it/v2
+- https://git-scm.com/docs/gittutorial
+
 Gioco per imparare ad utilizzare git:
-https://github.com/git-learning-game/oh-my-g
+- https://github.com/git-learning-game/oh-my-g

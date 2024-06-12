@@ -4,10 +4,10 @@
 - Il nome deriva dall'omonimo dispositivo che nel romanzo di fantascienza "Il Gioco di Ender" serviva per comandare remotamente le astronavi
 ### Caratteristiche Principali
 - Non richiede l'installazione di "agent" sulle macchine da gestire, si opera dal "controller"
-- semplice ed immediato da usare, non richiede conoscenza di linguaggi di programmazione
+- Semplice ed immediato da usare, non richiede conoscenza di linguaggi di programmazione
 - Multipiattaforma (*scritto in python*), portabile
 - Particolarmente leggero e performante
-- idempotente (*si ottiene sempre il risultato atteso*)
+- Idempotente (*si ottiene sempre il risultato atteso*)
 - Permette un approccio graduale: si può iniziare ad utilizzare con script già fatti
 - Curva di apprendimento bassa: in pochi minuti dalla lettura del manuale si è già operativi
 ### Concetti Chiave
@@ -47,7 +47,7 @@ Vi sono altri eseguibili forniti con Ansible:
 #### Commands
 L’eseguibile per lanciare un comando “ad-hoc” è: `ansible`
 Un comando ad-hoc è un “qualcosa” che si vuole eseguire molto velocemente senza volerlo salvare per essere riutilizzato in futuro, più precisamente l’esecuzione di un singolo modulo, ovvero un’attività singola; ad esempio l’installazione di un pacchetto su più sistemi, la verifica della presenza di un’utenza, lo stato dell’occupazione di un file systems.
-Con un comando “ad-hoc” si può eseguire un singolo task sui sistemi indicati dall’inventory.
+Con un comando “ad-hoc” si può eseguire un singolo task sui sistemi indicati dall'inventory.
 Capita spesso venga richiesta un’informazione, lo stato, o allineare il contenuto di un file su più sistemi, il comando “ad-hoc” può evitare di collegarsi in ssh ad ogni singolo sistema per effettuare la medesima operazione.
 Come parametro del comando `ansible` verrà passato il modulo che si vorrà venga eseguito sui sistemi remoti, se non si specificherà alcun modulo verrà eseguito di default il modulo `command`
 ![[Screenshot 2024-05-20 alle 14.39.29.png]]

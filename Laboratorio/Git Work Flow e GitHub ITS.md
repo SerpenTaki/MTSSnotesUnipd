@@ -1,5 +1,5 @@
 ### Creazione del Repo locale
-- Accedi a github
+- Accedi a GitHub
 - crea nuovo repo
 - Apri una shell git e seguire le istruzioni riportate:
 ```Shell
@@ -134,11 +134,11 @@ nothing to commit, working tree clean
 ## Relazioni tra commit e *Issue* in GitHub
 ##### Aggiungere una nuova attività in GitHub
 - Accedere al progetto e cliccare nella tab *issues*
-- creare una nuova *Issue* con i seguenti campi:
+- Creare una nuova *Issue* con i seguenti campi:
 	- **Title**: Aggiungere una nuova riga a README.md
 	- **Leave a Comment:** Aggiungere la nuova riga "seconda riga" al file README.md
-- cliccare il bottone "*Submit new issue"
-- recuperare l'ID della nuova issue
+- Cliccare il bottone "*Submit new issue"
+- Recuperare l'ID della nuova issue
 #### Svolgimento
 ###### Collegare le attività di sviluppo con le issue
 - modificare nuovamente il file
@@ -159,8 +159,7 @@ git push origin main
 ```
 **TIP**: GitHub permette di associare le modifiche effettuate nel VCS alle *Issue* censiti nel ITS riportando l'ID del workitem nei commit
 ## Work Flow
-### Centralized Work Flow
+### Centralized Workflow
 Come descritto in https://www.atlassian.com/git/tutorials/comparing-workflows:
 
-The Centralized Workflow is a great Git workflow for teams transitioning from SVN. Like Subversion, the Centralized Workflow uses a central repository to serve as the single point-of-entry for all changes to the project. Instead of trunk, the default development branch is called main and all changes are committed into this branch. This workflow doesn’t require any other branches besides main.
-
+Il Centralized Workflow è un ottimo flusso di lavoro Git per i team che stanno passando da SVN. Come Subversion, il Centralized Workflow utilizza un repository centrale come unico punto di ingresso per tutte le modifiche al progetto. Invece di trunk, il branch di sviluppo predefinito è chiamato main e tutte le modifiche vengono effettuate in questo branch. Questo flusso di lavoro non richiede altri branch oltre a main.

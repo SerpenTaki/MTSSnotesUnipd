@@ -2,28 +2,28 @@
 - Registrano tutte le modifiche avvenute ad un insieme di file
 - Permettono la condivisione di file e modifiche
 - Offrono funzionalità di merging e tracciamento delle modifiche
-### Perchè usarlo?
+### Perché usarlo?
 Un VCS permette di:
 - **Collaborare** in modo efficiente nel codice di un prodotto
 - **Individuare** facilmente e risolvere i **conflitti**
-- Facilita la **Condivisione** di commenti e documentazione
+- Facilitare la **Condivisione** di commenti e documentazione
 - Tracciare ogni modifica (*storia del prodotto*):
 	- Fornire una **storia completa** delle modifiche avvenute nel prodotto
-- Facilita il **ripristino** dei file a una **versione precedente**
+- Facilitare il **ripristino** dei file a una **versione precedente**
 ### Benefici
 - Mantengono la **storia completa** di ogni cambiamento avvenuto per ogni file (*autore, data, motivazione*)
 - **Lavorare senza interferenze** in differenti rami di sviluppo (**_Branching_**). Le modifiche effettuate in un ramo di sviluppo possono poi confluire nel ramo principale
-- **Tracciabilità**: tutte le modifiche possono far riferimento alle attività registrate nell' [[Issue Tracking System]]. In  ogni istante è possibile capire che attività sono state effettuate in una specifica versione.
+- **Tracciabilità**: tutte le modifiche possono far riferimento alle attività registrate nell'[[Issue Tracking System]]. In  ogni istante è possibile capire che attività sono state effettuate in una specifica versione.
 ## Differenti tipi di VCS
 I **VCS** possono essere classificati in 3 tipologie:
-- locali
+- Locali
 - Centralizzati
 - Distribuiti
 #### Local VCS
-*Molte persone gestiscono le diverse versioni copiando i file in un'altra directory (magari denominata con la data). Questo approccio è comune perchè molto semplice ma soggetto ad errori. è facile dimenticare in quale directory sei e modificare il file sbagliato o copiare dei file che non volevi copiare*
+*Molte persone gestiscono le diverse versioni copiando i file in un'altra directory (magari denominata con la data). Questo approccio è comune perché molto semplice ma soggetto ad errori. è facile dimenticare in quale directory sei e modificare il file sbagliato o copiare dei file che non volevi copiare*
 - **I tool più vecchi**
 - Registrano **solo** la storia dei cambiamenti
-	- Utilizzano un "Version DataBase" dove viene registrata la storia di tutti i file
+	- Utilizzano un "Version Database" dove viene registrata la storia di tutti i file
 	- Salva sul disco una serie di *patch* (_differenze tra file_) tra una versione e l'altra
 	- è possibile ricreare lo stato di qualsiasi file in qualsiasi momento
 - **Non gestiscono la condivisione**
@@ -31,15 +31,15 @@ I **VCS** possono essere classificati in 3 tipologie:
 - Meno vecchi e **molto diffusi**
 - Gestiscono sia la **condivisione** che il tracciamento della storia:
 	- La storia è gestita come nel **Local VCS**
-	- Il "*version database*" è gestito in un **server centrale (_singolo punto di rottura_)**
+	- Il "*Version Database*" è gestito in un **server centrale (_singolo punto di rottura_)**
 - Ogni sviluppatore è un client che ha nel suo spazio di lavoro **solo una versione** del codice
 - Facili da apprendere
 #### Distributed VCS (DVCS)
-- Simili ai CVCS ma il "version Database" **è distribuito per duplicazione in ogni nodo**
+- Simili ai CVCS ma il "Version Database" **è distribuito per duplicazione in ogni nodo**
 	- Quando il **nodo centrale non è disponibile, è possibile continuare a lavorare** e registrare i cambiamenti
 	- Hanno una **migliore risoluzione dei conflitti** che favorisca la collaborazione
 	- Permette di impostare **diversi tipi di flussi di lavoro** che non sono possibili in sistemi centralizzati
-- **L'apprendimenti** è più **complesso** rispetto ai CVCS
+- **L'apprendimento** è più **complesso** rispetto ai CVCS
 ### Cloud-based DVCS
 Esistono "VCS as a Service"
 Il "Version Database" è gestito in un servizio Cloud
@@ -69,20 +69,22 @@ I Workflow che usiamo per gestire i cambiamenti nello sviluppo del codice dipend
 		- GITLAB model
 - **FORKING workflow** is ideal for opensource projects
 #### Centralized
-- Questo pattern is the natural usage of a CVCS like *SVN* or CVS
-- It easy to understand and use, and sufficient enough for a lot of cases
-- Collaboration is blocked when centralized server is down or history is broken
-#### Feature Brach
-- Goal of this pattern: using **one** branch **per feature (DVCS)**
-	- Encapsulation allows working without disturbing the main codebase
-	- Allows easier collaboration
-	- Merge conflicts maps the conceptual conflicts: *easier to track*
+- Questo pattern è l'uso naturale di un CVCS come *SVN* o *CVS*
+- È facile da capire e usare, ed è sufficiente in molti casi
+- La collaborazione è bloccata quando il server centralizzato è inattivo o la cronologia è danneggiata
+
+#### Feature Branch
+- Obiettivi di questo pattern: l'uso di **un solo** branch **per feature (DVCS)**
+	- L'incapsulamento consente di lavorare senza modificare la main codebase
+	- Consente una collaborazione più semplice 
+	- I conflitti di merge mappano i conflitti concettuali: *più facili da tracciare*
 ##### GITFLOW MODEL
-- Keep your (*main*) **master branch** as the code that has been released
-- Use a **develop branch** as the current "*snapshot*" of what will go into the next release
-- Spawn off *feature branches* off develop for every new feature, which are merged back into it when they're ready
-- When you are ready to release, you merge to *master* and tag with a release version
-- Strict branching implementation: *roles* for *specific branches*
+- Dedica il (*main*) **master branch** al codice che dev'essere rilasciato
+- Usa un **develop branch** come "*snapshot*" corrente di cosa verrà incluso nella prossima release
+- Crea *feature branches* da develop per ogni nuova funzionalità, che sono soggette a merge di nuovo in develop una volta pronte
+- Quando si è pronti per il rilascio, si effettua il merge su *master* e si assegna un tag con una versione di rilascio
+- Implementazione rigorosa dei branch: *ruoli* per *branch specifici*
+
 ##### GITLAB FLOW
 Con GitLab Flow, tutte le funzionalità e le correzioni vanno al **MASTER**, prima di passare in *Pre-Production* e *Production*
 ###### GitHub vs GitLab
@@ -95,9 +97,9 @@ Con GitLab Flow, tutte le funzionalità e le correzioni vanno al **MASTER**, pri
 - Nel flusso di lavoro di GitLab, si creano più rami stabili oltre al master, di solito almeno produzione a pre-produzione. Questo significa un processo di test a più fasi in cui una singola revisione del codice sulla richiesta di merge non è sufficiente.
 - Es. Se avete un team dedicato al QA, è un modo per permettere al vostro team di Ricerca e Sviluppo di lavorare liberamente su nuove funzionalità senza preoccuparsi di testare ogni singolo minuto di cambiamento del codice.
 #### FORK
-- Pattern ereditato fa Github/Bitbucket
+- Pattern ereditato da Github/Bitbucket
 - Spinge sul concetto di file system distribuiti
-- Ogni utente *forks* la repo principale e può proporre *pullare richeste tra più repo*
+- Ogni utente *forks* la repo principale e può proporre **pull request** *tra più repo*
 - Authorization management improved
 - Autonomia per un migliore processo di collaborazione
 - Decentralizzato per il nuovi pattern ("*promiscuous integration*")

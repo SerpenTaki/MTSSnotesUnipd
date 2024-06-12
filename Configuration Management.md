@@ -7,7 +7,7 @@ L'obiettivo dei **Configuration Management** è di fornire un **modello logico d
 **Il configuration item (CI)** è un unit di configurazione che può essere gestita individualmente (tipo: computer, routers, servers, software, etc...)
 Un elemento chiave del processo è il Configuration Management Database (CMDB), che viene utilizzato per tracciare tutti i CI e le relazioni tra di loro (tipo: il server A ospita il servizio B, etc...).
 Alcuni benefici dell'implementare il processo di configuration management sono i seguenti:
-- Disponibilità di informazioni accurate sull’infrastruttura  IT
+- Disponibilità di informazioni accurate sull'infrastruttura IT
 - Maggiore controllo sulle CI (*potenzialmente costose*)
 - Maggiore aderenza alle leggi (*es. numero licenze software*)
 - Miglior supporto al processo di Incident e Problem Management, soprattutto nella valutazione dell'impatto degli incidenti e nell'analisi della "*root cause*"
