@@ -42,4 +42,5 @@ SonarQube è uno strumento di revisione automatica del codice per individuare bu
 	- **Code Smell** -> Permette di valutare la manutenibilità del progetto (_Maintainability_)
 - Permette di revisionare le issue segnalate e segnare i falsi positivi
 ![[Screenshot 2024-05-03 alle 13.42.03.png]]
-![[Screenshot 2024-05-03 alle 13.42.13.png]]
+
+$\rightarrow$ vai a [[Unit Testing]]

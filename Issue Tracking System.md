@@ -143,3 +143,5 @@ Vengono registrate e possono essere utilizzate come criterio di ricerca. Questo 
 - Gestione del tempo e della produttività personale
 - Ridurre le spese e gli sprechi
 - No mail company
+
+$\rightarrow$ Passa a [[Version Control System (VCS)]]

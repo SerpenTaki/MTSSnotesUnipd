@@ -84,3 +84,5 @@ Un Mojo è semplicemente un obiettivo in Maven, e i plugin consistono in un qual
 È possibile sviluppare plugin che eseguono obiettivi all'interno del build lifecycle.
 I plugin sono specificati e configurati nel file `pom.xml`.
 Vengono scaricati da Maven e salvati nel repository locale insieme alle altre librerie.
+
+$\rightarrow$ vai a [[Integrazione Continua]]

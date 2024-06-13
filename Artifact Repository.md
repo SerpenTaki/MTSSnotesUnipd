@@ -39,3 +39,4 @@ Metadati che permettono di capire se (p. es. `pom.xml`)
 ![[Screenshot 2024-05-05 alle 12.41.01.png]]
 ![[Screenshot 2024-05-05 alle 12.41.20.png]]
 
+$\rightarrow$ vai a [[Ansible]]

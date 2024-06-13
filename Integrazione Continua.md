@@ -101,3 +101,5 @@ Il sistema di continous integration deve poter avvisare i componenti del team ad
 - **Supporto per Esecuzione Parallela e Matrici:** consente di eseguire attività in parallelo e di definire "matrici" per eseguire build e test in diverse configurazioni.
 - **Integrazione con Notifiche e Servizi Esterni:** Offre integrazioni con servizi di notifica e può eseguire chiamate API a servizi esterni
 ![[Screenshot 2024-05-10 alle 17.08.59.png]]
+
+$\rightarrow$ vai a [[Feedback Loop]]

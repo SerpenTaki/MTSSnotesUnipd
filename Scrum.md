@@ -190,3 +190,5 @@ Permette di confermare se la storia è completa e funziona come voluto
 	- Distribuzione del team
 	- Durata del progetto
 - Scrum è già stato utilizzato per progetti 500+ persone (Scrum of scrums)
+
+$\rightarrow$ vai a [[Testing]]

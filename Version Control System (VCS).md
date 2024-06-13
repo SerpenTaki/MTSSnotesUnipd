@@ -40,6 +40,23 @@ I **VCS** possono essere classificati in 3 tipologie:
 	- Hanno una **migliore risoluzione dei conflitti** che favorisca la collaborazione
 	- Permette di impostare **diversi tipi di flussi di lavoro** che non sono possibili in sistemi centralizzati
 - **L'apprendimento** è più **complesso** rispetto ai CVCS
+
+| Caratteristica                | VCS                                                  | CVCS                                                                  | DVCS                                                            |
+| ----------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Definizione                   | Sistema per tracciare le modifiche ai file nel tempo | Sistema di controllo di versione con un singolo repository centrale   | Sistema di controllo di versione con più repository distribuiti |
+| Esempi                        | SCCS, RCS                                            | CVS, Subversion (SVN)                                                 | [[Git]], Mercurial, Bazaar                                      |
+| Struttura dei Repository      | Singolo repository                                   | Repository centrale                                                   | Repository locale e centrale                                    |
+| Accesso ai Dati               | Dati accessibili localmente                          | Accesso centralizzato ai dati                                         | Ogni copia ha l'intero repository                               |
+| Conflitti di Merge            | Gestione manuale dei conflitti                       | I conflitti si risolvono al momento del commit al repository centrale | I conflitti si risolvono durante i merge locali                 |
+| Lavoro Offline                | Limitato o non supportato                            | Necessita di connessione al repository centrale                       | Supportato, operazioni locali complete                          |
+| Prestazioni                   | Dipende dal tipo di VCS                              | Spesso più lento a causa del singolo punto centrale                   | Più veloce, operazioni locali                                   |
+| Sicurezza dei Dati            | Varia a seconda del sistema                          | Punto di vulnerabilità singolo nel repository centrale                | Maggiore sicurezza, backup distribuiti                          |
+| Scalabilità                   | Limitata                                             | Limitata dal server centrale                                          | Alta, grazie ai repository distribuiti                          |
+| Complessità di Configurazione | Dipende dal tipo di VCS                              | Moderata                                                              | Più alta, richiede gestione di più repository                   |
+| Collaborazione                | Limitata                                             | Collaborazione centralizzata                                          | Collaborazione facilitata, flussi di lavoro flessibili          |
+| Storia delle Revisioni        | Gestita localmente                                   | Storia centralizzata                                                  | Ogni copia mantiene la storia completa                          |
+| Esempi di Utilizzo            | Piccoli progetti, file singoli                       | Progetti di medie dimensioni, team centralizzati                      | Progetti di grandi dimensioni, team distribuiti                 |
+
 ### Cloud-based DVCS
 Esistono "VCS as a Service"
 Il "Version Database" è gestito in un servizio Cloud
@@ -124,3 +141,6 @@ Con GitLab Flow, tutte le funzionalità e le correzioni vanno al **MASTER**, pri
 	- privacy
 	- Esigenze del progetto
 	- Dimensioni del Team
+
+
+$\rightarrow$ Passa a [[GIT]]

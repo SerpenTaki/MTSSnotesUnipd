@@ -126,3 +126,5 @@ Sono presenti dei tutorial per provare i comandi di GIT:
 
 Gioco per imparare ad utilizzare git:
 - https://github.com/git-learning-game/oh-my-g
+
+$\rightarrow$ vai a [[Scrum]]

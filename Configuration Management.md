@@ -24,3 +24,5 @@ Il processo SCM definisce inoltre la necessità di tracciare le modifiche e la c
 ### CM in AWS
 **AWS OpsWorks** è un servizio di gestione delle configurazioni che fornisce istanze gestite di Chef e Puppet. Chef e Puppet sono piattaforme di automazione che permettono di utilizzare del codice per automatizzare le configurazioni dei tuoi server. OpsWorks utilizza Chef e Puppet per automatizzare il modo in cui vengono configurati, distribuiti e gestiti i server in tutte le istanze Amazon EC2 o in tutti gli ambienti di calcolo locali.
 **AWS CloudFormation** ti fornisce un linguaggio comune per descrivere ed effettuare il provisioning di tutte le risorse dell'infrastruttura nel tuo ambiente cloud. Con CloudFormation puoi usare un semplice file di testo per modellare ed effettuare il provisioning, in modo automatizzato e sicuro, di tutte le risorse necessarie alle tue applicazioni su tutte le regioni e tutti gli account. Questo file sarà l'unica sorgente del tuo ambiente cloud.
+
+$\rightarrow$ vai a [[Artifact Repository]]

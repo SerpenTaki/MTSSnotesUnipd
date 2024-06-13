@@ -129,3 +129,5 @@ Un modello di lifecycle dello sviluppo sequenziale che descrive una relazione un
 - Svolti con l'utente finale/cliente
 - SUT è considerato come black box
 ![[Screenshot 2024-04-18 alle 14.55.15.png]]
+
+$\rightarrow$ vai a [[Analisi Statica del codice]]

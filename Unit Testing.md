@@ -108,3 +108,5 @@ Nel mondo reale gli errori accadono. Una buona norma, per creare un buon progett
 
 # Performance Caracteristics
 I test di unità devono essere veloci perché devono poter essere eseguiti molto spesso.
+
+$\rightarrow$ vai a [[Build Automation]]
