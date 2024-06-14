@@ -7,7 +7,7 @@ L'obiettivo dei **Configuration Management** è di fornire un **modello logico d
 **Il configuration item (CI)** è un unit di configurazione che può essere gestita individualmente (tipo: computer, routers, servers, software, etc...)
 Un elemento chiave del processo è il Configuration Management Database (CMDB), che viene utilizzato per tracciare tutti i CI e le relazioni tra di loro (tipo: il server A ospita il servizio B, etc...).
 Alcuni benefici dell'implementare il processo di configuration management sono i seguenti:
-- Disponibilità di informazioni accurate sull’infrastruttura  IT
+- Disponibilità di informazioni accurate sull'infrastruttura IT
 - Maggiore controllo sulle CI (*potenzialmente costose*)
 - Maggiore aderenza alle leggi (*es. numero licenze software*)
 - Miglior supporto al processo di Incident e Problem Management, soprattutto nella valutazione dell'impatto degli incidenti e nell'analisi della "*root cause*"
@@ -24,3 +24,5 @@ Il processo SCM definisce inoltre la necessità di tracciare le modifiche e la c
 ### CM in AWS
 **AWS OpsWorks** è un servizio di gestione delle configurazioni che fornisce istanze gestite di Chef e Puppet. Chef e Puppet sono piattaforme di automazione che permettono di utilizzare del codice per automatizzare le configurazioni dei tuoi server. OpsWorks utilizza Chef e Puppet per automatizzare il modo in cui vengono configurati, distribuiti e gestiti i server in tutte le istanze Amazon EC2 o in tutti gli ambienti di calcolo locali.
 **AWS CloudFormation** ti fornisce un linguaggio comune per descrivere ed effettuare il provisioning di tutte le risorse dell'infrastruttura nel tuo ambiente cloud. Con CloudFormation puoi usare un semplice file di testo per modellare ed effettuare il provisioning, in modo automatizzato e sicuro, di tutte le risorse necessarie alle tue applicazioni su tutte le regioni e tutti gli account. Questo file sarà l'unica sorgente del tuo ambiente cloud.
+
+$\rightarrow$ vai a [[Artifact Repository]]

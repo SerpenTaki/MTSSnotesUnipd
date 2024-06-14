@@ -1,5 +1,5 @@
-**Static program analysis/static code analysis** is the **analysis of computer software** that is performed **without actually executing programs**, in contrast with dynamic analysis, which is analysis performed on programs while they are executing. In most cases the analysis is performed on some version of the source code, and in the other cases, some form of the object code.
-The term is usually applied to the **analysis performed by automated tool**, with **human analysis** being called program understanding, program comprehension, or code review. Software inspections and software walkthroughs are also used in the latter case.
+L'**Analisi Statica del codice** è un tipo di analisi effettuato **senza eseguire il programma analizzato**, a differenza dell'analisi dinamica, la quale viene effettuata su programmi in fase di esecuzione. Nella maggior parte dei casi l'analisi è eseguita su una qualche versione del codice sorgente, e in altri casi, in alcune forme del codice oggetto.
+Il termine viene spesso applicato all'**analisi effettuata da strumenti automatizzati**, mentre l'analisi umana viene solitamente chiamata *program understanding*, *program comprehension*, oppure *code review*.
 Appartiene alle seguenti categorie di test:
 - **Test statico:** non richiede l'esecuzione
 - **White Box**: è presente il codice sorgente
@@ -7,8 +7,8 @@ Appartiene alle seguenti categorie di test:
 Il software di **revisione automatica del codice** **verifica la conformità del codice sorgente** con un **insieme predefinito di regole o best practice**. L'uso di metodi analitici per ispezionare e rivedere il codice sorgente al fine di individuare i bug è una **pratica di sviluppo standard**, che può essere eseguita sia manualmente che in modo automatizzato. Con l'automazione, gli strumenti software forniscono assistenza nel processo di revisione e ispezione del codice. **Il programma o lo strumento di revisione visualizza in genere un elenco di avvertenze**. Un programma di revisione può anche fornire un modo automatico o assistito dal programmatore per correggere i problemi riscontrati. Si tratta di un componente che permette di padroneggiare facilmente il software. Contribuisce alla pratica della Software Intelligence.
 Alcuni strumenti di analisi statica del codice possono essere utilizzati per la revisione automatica del codice. Non sono paragonabili alle revisioni manuali, tuttavia **possono essere eseguite più velocemente** e in modo più efficiente. Questi strumenti, inoltre, **incapsulano una conoscenza approfondita delle regole e della semantica** necessarie per eseguire questo tipo di analisi, in modo da non richiedere al revisore umano del codice lo stesso livello di competenza di un revisore umano esperto.
 ## Teoria delle finestre rotte
-è una teoria criminologica sulla **capacità del disordine** urbano e del vandalismo **di generare criminalità aggiuntiva** e comportamenti anti-sociali. La teoria afferma che mantenere e controllare ambienti urbani **reprimendo i piccoli reati**, gli atti vandalici, la deturpazione dei luoghi, il bere in pubblico, la sosta selvaggia... contribuisce a creare un clima di ordine e legalità **riducendo il rischio di crimini più gravi**.
-*Ad esempio l'esistenza di una finestra rotta potrebbe generare fenomeni di emulazione, portando qualcunaltro a rompere un lampione o un idrante dand inizio così ad una spirale di degrado urbano e sociale*.
+È una teoria criminologica sulla **capacità del disordine** urbano e del vandalismo **di generare criminalità aggiuntiva** e comportamenti anti-sociali. La teoria afferma che mantenere e controllare ambienti urbani **reprimendo i piccoli reati**, gli atti vandalici, la deturpazione dei luoghi, il bere in pubblico, la sosta selvaggia... contribuisce a creare un clima di ordine e legalità **riducendo il rischio di crimini più gravi**.
+*Ad esempio l'esistenza di una finestra rotta potrebbe generare fenomeni di emulazione, portando qualcun altro a rompere un lampione o un idrante dando inizio così ad una spirale di degrado urbano e sociale*.
 ![[Screenshot 2024-05-02 alle 17.13.20.png]]
 ### Funzionalità
 Simili ad un correttore ortografico, permettono di:
@@ -28,18 +28,19 @@ Checkstyle può controllare molti aspetti del codice sorgente. Può trovare **pr
 ### PMD
 È un analizzatore statico di codice sorgente. **Individua i più comuni difetti di programmazione** come variabili inutilizzate, blocchi di cattura vuoti, creazione di oggetti non necessari, copia e incolla e così via. Si occupa principalmente di Java e Apex, ma supporta altri sei linguaggi.
 ## SonarQube
-SonarQube è uno strumento di revisione automatica del codice per individuare bug, vulnerabilità e code smell nel codice. Può integrarsi con il flusso di lavoro esistente per consentire una **ispezione continua del codice** tra i rami del progetto e le richieste di pull.
+SonarQube è uno strumento di revisione automatica del codice per individuare bug, vulnerabilità e code smell nel codice. Può integrarsi con il flusso di lavoro esistente per consentire un'**ispezione continua del codice** tra i rami del progetto e le richieste di pull.
 ![[Screenshot 2024-05-03 alle 13.30.18.png]]
 ### Funzionalità:
-- **storicizza** l'andamento della qualità
+- **Storicizza** l'andamento della qualità
 - Permette di verificare se c'è un miglioramento o un deterioramento del progetto nel tempo
 - Permette di stabilire un **quality profile** da applicare al progetto
 - Permette di stabilire un **quality gate** per verificare se la qualità del progetto rispetta determinati standard
 - Le **issue** segnalate vengono classificate in base alla gravità
 - Le issue vengono classificate in:
-	- **vulnerabilità** -> Permette di valutare il livello di sicurezza del progetto (_security_)
-	- **bug** -> Permette di valutare l'affidabilità del progetto (_Reliability_)
+	- **Vulnerabilità** -> Permette di valutare il livello di sicurezza del progetto (_Security_)
+	- **Bug** -> Permette di valutare l'affidabilità del progetto (_Reliability_)
 	- **Code Smell** -> Permette di valutare la manutenibilità del progetto (_Maintainability_)
 - Permette di revisionare le issue segnalate e segnare i falsi positivi
 ![[Screenshot 2024-05-03 alle 13.42.03.png]]
-![[Screenshot 2024-05-03 alle 13.42.13.png]]
+
+$\rightarrow$ vai a [[Unit Testing]]

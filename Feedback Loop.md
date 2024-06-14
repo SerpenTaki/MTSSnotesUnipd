@@ -18,3 +18,5 @@ Valutare
 - **Che media** utilizzare?
 - **Che evento, priorità, frequenza**, limiti?
 ![[Screenshot 2024-05-05 alle 13.33.26.png]]
+
+$\rightarrow$ vai a [[Configuration Management]]
