@@ -13,6 +13,7 @@
 - [[Configuration Management]]
 - [[Artifact Repository]]
 - [[Ansible]]
+- [[Container]]
 
 ##### Argomenti in ordine:
 - [[Issue Tracking System]]
