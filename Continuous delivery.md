@@ -69,3 +69,27 @@ Per realizzare questa pratica è consigliato avere un repository dove rilasciare
 L'artefatto generato deve essere indipendente dall'ambiente di esecuzione: è necessario tenere il codice separato dalle configurazioni che differisce tra gli ambienti
 
 # Deploy the Same Way to Every Environment
+È essenziale utilizzare lo stesso script per effettuare il rilascio in differenti ambienti. In questo modo lo script di rilascio sarà più solido perchè verrà verificato maggiormente:
+- Gli sviluppatori lo utilizzeranno per rilasciare molto frequentemente negli ambienti di sviluppo
+- I tester e gli analisti lo utilizzeranno per rilasciare negli ambienti di test
+- Quando verrà rilasciato in produzione lo script sarà stato eseguito molte volte e sarà più probabile che non fallirà
+Gli script sono codice e quindi devono essere gestiti nel VCS
+Tenere separati dagli script le configurazioni (che saranno differenti per ogni ambiente)
+Se gli ambienti di rilascio sono gestiti da altri gruppi (OPS) è necessario collaborare con questi gruppi per definire gli script di rilascio e condividerli con i DEV (VCS)
+# Smoke-Test Your Deployments
+Per verificare se il rilascio automatico è andato bene prevedere l'esecuzione di smoke-test.
+Gli smoke-test devono verificare anche il corretto funzionamento dei sub-system esterni (DB, altri web-services, messaging bus)
+Gli smoke-test sono veloci e semplici da realizzare e permettono di far fallire velocemente la pipeline in caso di problemi
+# Deploy into a Copy of Production
+Prevedere di avere a disposizione un ambiente con le stesse caratteristiche dell'ambiente di produzione
+
+Per essere sicuri che il deploy funzionerà, è necessario eseguire i test e gli script di rilascio in ambienti il più possibile simili all'ambiente di produzione.
+
+L'ambiente dovrà avere:  (**Configuration Management**)
+- La stessa configurazione di rete (*e dei firewall*)
+- Lo stesso sistema operativo (*versioni e patching*)
+- Lo stesso stack applicativo (*application server, versione db etc...*)
+- I dati gestiti dall'applicazione devono essere in uno stato consistente
+# Each Change Should Propagate through the Pipeline Instantly
+Ogni modifica al codice sorgente deve avviare il processo di Deploy (*pipeline*)
+Molto probabilmente la pipeline impiegherà tanto tempo per e
