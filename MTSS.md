@@ -19,7 +19,8 @@
 - [[Unit Testing]]
 - [[Artifact Repository]]
 - [[Integrazione Continua]]
-- continuos delivery? [[Feedback Loop]]
+- [[Continuous delivery]]
+- [[Feedback Loop]]
 - [[Configuration Management]]
 - [[Ansible]]
-- container?
+- [[Container-Mtss]]
