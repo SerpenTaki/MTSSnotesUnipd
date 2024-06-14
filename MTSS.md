@@ -1,13 +1,18 @@
 ### Sommario
 - [[Issue Tracking System]]
-	- [[Version Contol System (VCS)]]
+	- [[Version Control System (VCS)]]
 	- [[GIT]]
 - Il framework [[Scrum]]
 - Source Code Management
 - [[Testing]] Software & Automation
-- Processo di Build [[Build Automation]]
-- Continuos Delivery -> [[Feedback Loop]]
-- Configuration Management
+	- [[Analisi Statica del codice]]
+	- [[Unit Testing]]
+- Processo di [[Build Automation]]
+	- [[Integrazione Continua]]
+	- Continuous Delivery -> [[Feedback Loop]]
+- [[Configuration Management]]
+- [[Artifact Repository]]
+- [[Ansible]]
 
 ##### Argomenti in ordine:
 - [[Issue Tracking System]]
