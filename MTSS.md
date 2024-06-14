@@ -9,3 +9,17 @@
 - Continuos Delivery -> [[Feedback Loop]]
 - Configuration Management
 
+##### Argomenti in ordine:
+- [[Issue Tracking System]]
+- [[Version Contol System (VCS)]]
+- [[GIT]]
+- [[Scrum]]
+- [[Build Automation]]
+- [[Testing]]
+- [[Unit Testing]]
+- [[Artifact Repository]]
+- [[Integrazione Continua]]
+- continuos delivery? [[Feedback Loop]]
+- [[Configuration Management]]
+- [[Ansible]]
+- container?
