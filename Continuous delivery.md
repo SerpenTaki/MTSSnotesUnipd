@@ -92,4 +92,18 @@ L'ambiente dovrà avere:  (**Configuration Management**)
 - I dati gestiti dall'applicazione devono essere in uno stato consistente
 # Each Change Should Propagate through the Pipeline Instantly
 Ogni modifica al codice sorgente deve avviare il processo di Deploy (*pipeline*)
-Molto probabilmente la pipeline impiegherà tanto tempo per e
+Molto probabilmente la pipeline impiegherà tanto tempo per eseguire l'intero processo per questo è necessario inserire delle verifiche negli stages che la facciano fallire il prima possibile.
+Il processo di Continuous integration non eseguirà ad ogni commit e sarà più complicato identificare l'errore. Per questo si consiglia un CI Server che possa eseguire il processo di CI a partire da uno specifico commit. In questo modo sarà più semplice effettuare attività di debug per identificare la modifica che ha fatto fallire il processo.
+![[Screenshot 2024-06-15 alle 13.54.10.png]]
+# If any Part of the pipeline fails, stop the line
+Progettare la pipeline in moda da eseguire per primi i controlli veloci e meno esaustivi.
+In questo modo sarà possibile far fallire la pipeline e notificare tutto il team (DEV, TEST, OPS) del problema.
+# Benefici
+- **Ridurre il rischio legato al deploy:** dal momento che si sta distribuendo piccole modifiche è meno probabile corrompere il sistema ed è più facile risolvere l'errore in caso di problemi
+- **Velocizza il _time to market_:** questa pratica porta ad avere rilasci più frequenti
+- **Maggiori feedback da parte degli utenti**
+- **Progressi tangibili:** molti Team monitorano i progressi in un ITS. Se _DONE_ significa "gli sviluppatori dichiarano che è stato fatto" è molto meno credibile rispetto a "è fatto, verificato e distribuito in un ambiente di produzione" (o simile alla produzione)
+- **Minor costo:** diretta conseguenza dell'automazione
+- **Prodotti migliori:** che soddisfano le aspettative degli utenti
+- **Team meno stressati e più cooperativi**
+- **Maggiore documentazione implicita**
