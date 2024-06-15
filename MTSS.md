@@ -7,13 +7,19 @@
 - [[Testing]] Software & Automation
 	- [[Analisi Statica del codice]]
 	- [[Unit Testing]]
-- Processo di [[Build Automation]]
+- Processo di Build
+	- [[Build Automation]]
 	- [[Integrazione Continua]]
-	- Continuous Delivery -> [[Feedback Loop]]
+- Continuous Delivery -> [[Feedback Loop]]
 - [[Configuration Management]]
+<<<<<<< Updated upstream
 - [[Artifact Repository]]
 - [[Ansible]]
 - [[Container]]
+=======
+	- [[Artifact Repository]]
+	- [[Ansible]]
+>>>>>>> Stashed changes
 
 ##### Argomenti in ordine:
 - [[Issue Tracking System]]

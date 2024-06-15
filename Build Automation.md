@@ -39,7 +39,7 @@ Sfrutta il paradigma "*Convention Over Configuration*" che prevede una configura
 - *Build Tool*: sono definite delle Build Lifecycle che permettono di configurare ed eseguire il processo di build (*ed altri processi*)
 - *Dependency Management*: Le dipendenze di progetto vengono specificate nel file di configurazione (`pom.xml`). Maven si occupa di scaricarle in automatico da dei Repository remoti e salvarle in un repository locale.
 - *Remote Repositories*: sono stati definiti dei repository remoti dove sono presenti gran parte delle librerie di progetti opensource e dei plugin utilizzati da maven per implementare e estendere le fasi dei Build Lifecycle
-- *Universal Reuse of Build Logic*: Le Build Lifecycle, i plugin maven permettono di definire in modo riusabile i principali aspetti richiesti per la gestione di progetto. Tra cui: l'esecuzione del processo di build, l'esecuzione di framework di test (*p.es. Junit/TestNG*), la creazione di template di progetto (*p.es. Applicazioni Java Web o applicazioni costruite con un determinato framework*)
+- *Universal Reuse of Build Logic*: Le Build Lifecycle, i plugin maven permettono di definire in modo riusabile i principali aspetti richiesti per la gestione di un progetto. Tra cui: l'esecuzione del processo di build, l'esecuzione di framework di test (*p.es. Junit/TestNG*), la creazione di template di progetto (*p.es. Applicazioni Java Web o applicazioni costruite con un determinato framework*)
 ## Build Lifecycle
 Maven è *basato sul concetto centrale di* **build lifecycle**. Questo significa che **il processo per eseguire il build e la distribuzione di un particolare artefatto _(project)_ è definita chiaramente.
 
@@ -50,7 +50,7 @@ These are 3 built-in build lifecycles:
 2. The **clean**  lifecycle handles project cleaning
 3. Site **lifecycle** handles the creation of your project's site documentation
 ### Build Lifecycle (_default_)
-La **default** Build Lifecycle è composta dalle seguenti fasi (*o goals*)
+Il **default** Build Lifecycle è composta dalle seguenti fasi (*o goals*)
 - **Validate** -> validate the project is correct and all necessary information is available
 - **Compile** -> compile the source code of the project
 - **Test** -> test the compiled source code using a suitable unit testing framework. These test should not require the code be package or deployed
@@ -70,7 +70,7 @@ Alcune delle configurazioni che possono essere specificate nel POM sono:
 - Project ID (*group ID + artifact ID + version*)
 ![[Screenshot 2024-03-25 alle 11.29.10.png]]
 ### Project Archetypes
-In breve, Archetype è un **toolkit di templating per progetti Maven**. Un archetype è definito come un **modello o schema originale** da cui sono generati **tutti gli altri oggetti dello stesso tipo**. Il nome è appropriato in quanto stiamo cercando di fornire un sistema che offra un mezzo coerente per generare template di progetti Maven per gli utenti, e che fornisca agli utenti i mezzi **per generare versioni parametrizzate di questi template di progetto**.
+In breve, Archetype è un **toolkit di templating per progetti Maven**. Un archetipo è definito come un **modello o schema originale** da cui sono generati **tutti gli altri oggetti dello stesso tipo**. Il nome è appropriato in quanto stiamo cercando di fornire un sistema che offra un mezzo coerente per generare template di progetti Maven per gli utenti, e che fornisca agli utenti i mezzi **per generare versioni parametrizzate di questi template di progetto**.
 
 ```shell
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

@@ -23,9 +23,9 @@ Ogni singola "**attività minima**" (Work Item) del progetto è gestita mediante
 	- Dashboard
 - Implementare un **processo** per **misurare la qualità** del progetto
 - Avere un'**istantanea** dello stato del progetto:
-	- attività da fare
-	- in corso d'opera
-	- completate
+	- Attività da fare
+	- In corso d'opera
+	- Completate
 - Decidere **quando** rilasciare e **cosa rilasciare**
 	- I *Work Item* possono essere assegnati ad una versione
 - **Assegnare** e dare una **priorità** alle attività
@@ -44,7 +44,7 @@ Ogni singola "**attività minima**" (Work Item) del progetto è gestita mediante
 - **Stato di Risoluzione**: identifica lo stato di risoluzione del *Work Item*
 - **Versione di riferimento:** Versione del progetto in cui è richiesta l'attività
 - **Componente**: Componente del progetto a cui si riferisce il *Work Item*
-- **Etichette:** Permettono di collegare tra loro i *Work Item*
+- **Etichette:** Permettono di classificare i Work Item anche di diversi tipi. Ne facilitano il raggruppamento e la ricerca
 - **Collegamenti:** Permettono di collegare tra di loro i *Work Item*
 - **Assegnatario:** Identifica chi è il responsabile per svolgere l'attività
 - **Segnalante:** Identifica chi ha segnalato l'attività
@@ -89,7 +89,7 @@ Vengono registrate e possono essere utilizzate come criterio di ricerca. Questo 
 - metodo di lavoro che consiste nel trovare task fattibili in un tot di tempo, imporsi una scadenza e completarle nel tempo limite, ovviamente ci si concentra solo su una parte del codice senza andare a fare le altre
 ##### Board o bacheche:
 - Permette di visualizzare i Work Item di uno o più progetti, offrendo un modo flessibile e interattivo di visualizzazione, gestione e visualizzare dei dati di sintesi sulle attività in corso.
-- è configurata e visualizza i Work Item ricercati con un filtro.
+- È configurata e visualizza i Work Item ricercati con un filtro.
 - Permette di interagire velocemente con i Work Items (p.es, Avanzare di stato, modificare alcuni campi)
 ##### Report:
 - ==Hanno lo scopo di monitorare e avere una visione d'insieme del progetto==

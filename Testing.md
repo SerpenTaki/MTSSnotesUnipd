@@ -33,7 +33,7 @@ Il **processo** costituito da tutte le attività di lifecycle, sia **statiche** 
 	Rappresentano **come** la nostra applicazione risponde alle esigenze 
 **Statico:**
 	Testare un prodotto di lavoro senza l'esecuzione del codice. (*p.es. analisi e revisione dei documenti, analisi e revisione dei requisiti*)
-	**Dinamico:**
+**Dinamico:**
 	Collaudo che prevede l’esecuzione del Software di un componente o di un sistema
 **Verifica:** ==Fatto a regola d'arte==
 	Il prodotto è realizzato secondo le specifiche (*tecniche*) e funziona correttamente

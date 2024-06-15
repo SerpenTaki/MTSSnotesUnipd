@@ -119,7 +119,7 @@ Con Docker, è possibile **gestire le infrastrutture nello stesso modo in cui si
 Approfittando delle metodologie di docker per shipping, testing e rilascio veloce del codice, è possibile **ridurre significativamente l'intervallo di tempo tra la scrittura del codice e runnarlo in produzione**.
 
 ## Container VS Virtualizzazione
-#### Immagine da inserire
+![[containervsvirtualiz.png]]
 ### Vantaggi rispetto alle VM:
 - Velocità e leggerezza
 - Non necessitano di un sistema operativo dedicato
@@ -152,7 +152,20 @@ La base per costruire un container. **Rappresenta l'intera applicazione**.
 Un'immagine è un **file immutabile** che rappresenta un'istantanea di un container. 
 Le immagini sono costituite da **strati di altre immagini** e vengono create con l'operazione di build a partire da un file descrittore chiamato **DockerFile**.
 Possono essere condivise e scaricate da un registry.
-##### Immagine appunti da inserire 
+
+```dockerfile
+FROM tiangolo/meinheld-gunicorn-flask:python3.7
+
+COPY /dist/flaskr-1.0.0-py2.py3-none-any.wh1/app
+
+RUN pip install /app/flaskr-1.0.0-py2.py3-none-any.wh1
+
+ENV FLASK_APP=flaskr
+
+RUN flask init-db
+
+ENV APP_MODULE flaskr:create_app()
+```
 
 ## Docker Container 
 L'unità standard in cui risiede ed esegue il servizio dell'applicazione.
@@ -205,3 +218,38 @@ Swarm si proponeva quindi come lo **strumento di default** per la gestione di co
 ### Task e servizi
 - Un nodo master assegna il compito (*task*, appunto) di eseguire un certo *servizio* su un nodo del cluster (possibilmente worker), ovvero avviare una o più istanze di un container a partire da un'immagine
 - L'interazione tra il nodo master e la CLI è **asincrona**: da qua si evince che c'è qualcuno che sta facendo qualcosa (task) dopo che abbiamo eseguito un comando. 
+![[architettura_docker_swarm.png]]
+
+# Kubernetes
+Kubernetes (per gli amici K8s) è un sistema open source per la gestione di **applicazioni containerizzate** in molteplici hosts. Prevede meccanismi di base per il deployment, manutenzione e scaling delle applicazioni.
+Kubernetes si basa su un'esperienza di quindici anni di Google nella gestione di carichi di lavoro in produzione su larga scala utilizzando un sistema chiamato Borg, combinata con le migliori idee e pratiche della community.
+Kubernetes è hostato dalla *Cloud Native Computing Foundation* (CNCF). Se la tua compagnia vuole aiutare a modellare l'evoluzione delle tecnologie container-packaged, dynamically scheduled e microservice-oriented, considera di entrare a far parte del CNCF. 
+## Funzionalità di Kubernetes
+- **Gestione dei Container**: automatizza il deployment, la gestione e il monitoraggio dei container
+- **Scalabilità Automatica (Auto-scaling)**: K8s può scalare automaticamente le applicazioni in base alla domanda di risorse, utilizzando l'*Horizontal Pod Autoscaler (HPA)* per adattare il numero di repliche dei [[#Pod]] in esecuzione. 
+- **Self-Healing**: K8s monitora continuamente lo stato dei pod e dei nodi, riavviando i container falliti, rimpiazzando i nodi morti e ridistribuendo i container su nodi sani per mantenere l'applicazione funzionante.
+- **Gestione del Networking**: K8s gestisce la rete tra i container, fornendo un indirizzo IP unico per ogni pod e facilitando la comunicazione tra i pod tramite servizi di rete d DNS interno. 
+- **Gestione dello Storage**: K8s può montare e gestire volumi di storage permanenti per i pod, integrandosi con vari provider di storage come AWS, GCP e Azure, nonché con soluzioni di storage permanenti on-premise.
+- **Configurazione e Gestione dei Segreti**: K8s gestisce configurazioni e segreti (come password e chiavi API)
+- **Gestione del Ciclo di Vita delle Applicazioni**: K8s supporta i processi di aggiornamento continuo e rollback delle applicazioni, consentendo aggiornamenti senza downtime.
+- **Isolamento e Sicurezza**: K8s fornisce isolamento tra le applicazioni tramite namespace e implementa politiche di sicurezza che regolano l'accesso ai cluster, ai pod e alle risorse. 
+- **Supporto per Architetture Multi-Cloud e Ibride**: K8s è agnostico rispetto al provider di infrastruttura e può essere eseguito in ambienti multi-cloud e ibridi
+
+## Pod
+I Pod sono le **unità di deployment più piccole** che possono essere create e gestite in Kubernetes.
+Un Pod è un insieme di **uno o più container** (come i container Docker), con archiviazione/rete condivise, e una specifica per come eseguire i container. I contenuti di un Pod sono sempre co-localizzati e co-pianificati, e vengono eseguiti in un contesto condiviso. Un Pod modella un "host logico" specifico per l'applicazione - contiene uno o più container applicativi che sono relativamente strettamente accoppiati.
+
+# Riferimenti
+- https://www.slideshare.net/Docker/docker-101-nov-2016
+- https://www.slideshare.net/MeganOKeefe1/kubernetes-a-short-introduction-2019
+- https://www.docker.com/sites/default/files/Infographic_OneDocker_09.20.2016.pdf
+- https://docs.docker.com/get-started/
+- https://www.docker.com/blog/containers-replacing-virtual-machines/
+- https://it.wikipedia.org/wiki/Docker
+- https://docs.docker.com/engine/reference/commandline/docker/
+- https://slides.kubernetesmastery.com/
+- https://codingjam.it/da-docker-compose-a-docker-swarm-viaggio-di-sola-andata/
+- https://github.com/kubernetes/kubernetes
+- https://medium.com/containermind/areference-architecture-for-deploying-wso2-middleware-on-kubernetes-d4dee7601e8e
+- https://docs.docker.com/compose
+- https://kubernetes.io/docs/concepts/workloads/pods/pod-overview

@@ -19,12 +19,8 @@ Git è nato per essere un semplice strumento per facilitare lo **sviluppo del** 
 	- È rilasciato con licenza *GNU General Public License version 2.0*
 	- Il codice sorgente è pubblico
 
-"... Git thinks of its data more like a **set of snapshots** of a miniature filesystem. Every
-time you *commit*, or **save the state of your project** in Git, it basically **takes a picture
-of what all your files look like at that moment** and stores a reference to that snapshot.
-To be efficient, *if files have not changed*, Git doesn’t store the file again, just *a link to
-the previous identical file it has already stored.* Git thinks about its data more like a
-stream of snapshots.”
+"... Git thinks of its data more like a **set of snapshots** of a miniature filesystem. Every time you *commit*, or **save the state of your project** in Git, it basically **takes a picture of what all your files look like at that moment** and stores a reference to that snapshot.
+To be efficient, *if files have not changed*, Git doesn’t store the file again, just *a link to the previous identical file it has already stored.* Git thinks about its data more like a stream of snapshots.”
 ### Aree locali
 In GIT i file della copia locale possono essere:
 - Nella **Working directory**, *checked out*, modificati ma non ancora validati (Modified)
