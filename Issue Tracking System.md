@@ -56,11 +56,11 @@ Ogni singola "**attività minima**" (Work Item) del progetto è gestita mediante
 - **Tempo speso**
 - **Allegati**
 ### Il Workflow
-**Il _Workflow_** è un insieme di **Stati** e **transizioni** che un *Work Item* attraversa durante il suo ciclo di vita. In genere premette di implementare **il processo da seguire** per completare l'attività.
+**Il _Workflow_** è un insieme di **Stati** e **transizioni** che un *Work Item* attraversa durante il suo ciclo di vita. In genere permette di implementare **il processo da seguire** per completare l'attività.
 - Viene associato ad un **Progetto** e può essere associato ad uno o più **Tipi**
 - Permette di registrare tutte le transizioni e cambi di stato.
 ### Collegamenti
-Permettono di definire **relazione** tra i *Work Item* anche di differenti tipi. I collegamenti sono bidirezionali (dal/al *Work Item*).
+Permettono di definire la **relazione** tra i *Work Item* anche di differenti tipi. I collegamenti sono bidirezionali (dal/al *Work Item*).
 Vengono registrate e possono essere utilizzate come criterio di ricerca. Questo permette di **verificare la presenza o meno di relazione tra i _Work Item_** (p.es. **Il requisito è coperto da casi di test**)
 ### Funzionalità di un ITS
 1. **Gestione**
@@ -87,10 +87,6 @@ Vengono registrate e possono essere utilizzate come criterio di ricerca. Questo 
 - Permette di interagire velocemente con i *Work Items*
 ###### Scrum Sprint:
 - metodo di lavoro che consiste nel trovare task fattibili in un tot di tempo, imporsi una scadenza e completarle nel tempo limite, ovviamente ci si concentra solo su una parte del codice senza andare a fare le altre
-##### Board o bacheche:
-- Permette di visualizzare i Work Item di uno o più progetti, offrendo un modo flessibile e interattivo di visualizzazione, gestione e visualizzare dei dati di sintesi sulle attività in corso.
-- È configurata e visualizza i Work Item ricercati con un filtro.
-- Permette di interagire velocemente con i Work Items (p.es, Avanzare di stato, modificare alcuni campi)
 ##### Report:
 - ==Hanno lo scopo di monitorare e avere una visione d'insieme del progetto==
 ## Configurazione e utilizzo di un ITS
