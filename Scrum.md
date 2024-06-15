@@ -80,8 +80,11 @@ Le fasi di _requisiti_, _progetto_, _codifica_ e _test_ che si verificano nel fr
 - Vengono identificati i Tasks, e ciascuno di questi viene stimato (1-16 ore)
 - *Come* completare il backlog?
 	- Decomposizione delle *User Story*
-	
-![[Pasted image 20240323155747.png]]
+
+``` mermaid
+flowchart LR
+A[Pianificatore di vacanze:<br> voglio vedere le foto degli alberghi] --> B("Scrivere lo strato business (8)<br>Scrivere l'interfaccia utente (4)<br>Scrivere le test fixtures (4)<br>Scrivere la classe java (6)<br>Aggiornare i performance tests")
+```
 ![[Pasted image 20240323155759.png]]
 ### Daily scrum (stand-up meeting)
 Si tratta di un incontro giornaliero di 15 minuti, è un evento veloce che si svolge solitamente in piedi, in modo da non doversi sedere e rendere la riunione prolissa.
@@ -173,13 +176,18 @@ Definisce il significato di "FATTO" per uno Sprint Item
 - Può variare per gruppo di lavoro 
 - Deve essere bene chiaro per tutti i membri del gruppo di lavoro 
 - È utilizzato per verificare se un'attività è da ritenersi completata 
+
 ![[Pasted image 20240323161714.png]]
 #### Acceptance criteria
 Permette di confermare se la storia è completa e funziona come voluto
 - Frasi semplici condivise da Product Owner e Development Team
 - Possono essere incluse con la User Story
 - Rimuovono l'ambiguità dei requisiti
-![[Pasted image 20240323161736.png]]
+		
+<center>
+		<i>A user cannot submit a form without completing all the mandatory fields. information from the form is stored in the registrations database. An acknowledgment email is sent to the user after submitting the form</i>
+	</center>
+
 ![[Pasted image 20240323161757.png]]
 #### Scalabilità di Scrum 
 - Tipica dimensione del team è 7 (± 2) persone

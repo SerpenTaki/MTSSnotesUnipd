@@ -68,7 +68,36 @@ Alcune delle configurazioni che possono essere specificate nel POM sono:
 - I profili di build eccetera...
 - Altre informazioni come la versione del progetto, la descrizione, gli sviluppatori, mailing list possono essere specificate al suo interno.
 - Project ID (*group ID + artifact ID + version*)
-![[Screenshot 2024-03-25 alle 11.29.10.png]]
+```xml
+<project xmlns="http://maven.apace.org/POM/4.0.0"  
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+	http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion> 
+
+	<groupId>com.mycompany.app</groupId>
+	<artifactId>my-app</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<!-- packaging>jar</packaging -->
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit<groupId>
+			<artifactId>junit<artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		<dependency>
+	</dependencies>
+</project>
+```
+$\uparrow$ Questo pom è sufficiente per eseguire la build di un progetto java (e molto altro).
+Le informazioni non specificate in questo file vengono ereditate da maven (convention over configuration) e sono riportate nel super POM presente nell'installazione di maven.
+
 ### Project Archetypes
 In breve, Archetype è un **toolkit di templating per progetti Maven**. Un archetipo è definito come un **modello o schema originale** da cui sono generati **tutti gli altri oggetti dello stesso tipo**. Il nome è appropriato in quanto stiamo cercando di fornire un sistema che offra un mezzo coerente per generare template di progetti Maven per gli utenti, e che fornisca agli utenti i mezzi **per generare versioni parametrizzate di questi template di progetto**.
 

@@ -1,11 +1,44 @@
-#### Cos'è la Continuos Delivery
+#### Cos'è la Continuous Delivery
 "*Your team prioritizes keeping the software deployable over working on new features*" (Martin Fowler)
 
 La Continuous Delivery è il passo successivo alla Continuous Integration:
 - **Ogni cambiamento** al sistema **può potenzialmente essere rilasciato in produzione**
 - Il rilascio può essere fatto in ogni momento in ogni ambiente (**premendo un bottone**)
-![[Screenshot 2024-06-14 alle 19.41.27.png]]
-![[Screenshot 2024-06-14 alle 19.42.01.png]]
+
+| **_Tipologie Continuous_** | **_Definizione_**                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Continuous Delivery        | Un insieme di pratiche progettate per assicurare che il codice sia sempre pronto per essere rilasciato rapidamente e in modo sicuro, attraverso tutto il suo ciclo di vita fino all'esercizio, realizzato passando prima gli eseguibili in un ambiente simile a quello di produzione ed effettuando test automatizzati per rilevare problemi.                                                                                                                             |
+| Continuous Deployment      | Una estensione del concetto di Continuous Delivery nella quale tutte le modifiche che superano i test automatizzati vengono automaticamente passate in produzione. Il Continuous Deployment automatizza il passaggio precedente effettuato in modo manuale nel Continuous Delivery,e consente rilasci multipli giornalieri.                                                                                                                                               |
+| Continuous Integration     | La pratica di mettere insieme le copie di lavoro di tutti gli sviluppatori in un'unica linea principale condivisa (un repository o blocco principale di codice) durante una giornata. In un processo automatizzato di Continuous Delivery, la Continuous Integration copre principalmente la fase di realizzazione del codice. Tipicamente la Continuous Integration si applica alle attività di integrazione, realizzazione e test del codice nell'ambiente di sviluppo. |
+| Continuous Testing         | L'esecuzione di test automatici in ogni fase della Deployment pipeline.<br>Fornisce un feedback immediato in ogni fase, al fine di mitigare i rischi. Un Continuous Testing automatizzato rappresenta un elemento chiave della Continuous Integration e del Continuous Delivery. Assicura che il codice e l'ambiente operino in modo appropriato, e che il codice rimanga in uno stato rilasciabile.                                                                      |
+## Continuous Delivery != Continuous Deployment
+
+
+<center>
+<h3> Continuous Delivery</h3>
+</center>
+```mermaid
+%%{init: {'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart LR
+	A(Code <br> Done) -->|Auto| B(Unit<br>Tests)
+	B -->|Auto| C(Integrate)
+	C -->|Auto| D(Acceptance<br>Test)
+	D -->|MANUAL| E(Deploy to<br>Production)
+```
+ 
+ <center>
+<h3> Continuous Deployment</h3>
+</center>
+```mermaid
+%%{init: {'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart LR
+	A(Code<br>Done) -->|Auto| B(Unit<br>Tests)
+	B -->|Auto| C(Integrate)
+	C -->|Auto| D(Acceptance<br>Test)
+	D -->| AUTO | E(Deploy to<br>Production)
+```
+
+
 ### Continuous Delivery
 La Continuous Integration permette di avere **feedback su problemi introdotti dagli sviluppatori**. Si focalizza sulla parte DEV e assicura che:
 - Il codice compili

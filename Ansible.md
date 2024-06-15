@@ -59,3 +59,4 @@ Un repository di Playbooks examples è presente a questo URL: https://github.co
 I Playbooks sono scritti in linguaggio YAML.
 ![[Screenshot 2024-05-20 alle 14.40.24.png]]
 ![[Screenshot 2024-05-20 alle 14.40.36.png]]
+$\rightarrow$ vai a [[Container]]
