@@ -1,3 +1,8 @@
+# Definizione
+“Un componente della *gestione della configurazione del software*, il *controllo versione*, noto anche come controllo delle revisioni o controllo del codice sorgente, è la **gestione delle modifiche a documenti**, programmi per computer, grandi siti web e altre raccolte di informazioni.
+Le modifiche sono solitamente **identificate da un numero o un codice letterale**, chiamato "numero di revisione", "livello di revisione" o semplicemente "revisione". Ad esempio, un insieme iniziale di file è "revisione 1". Quando viene apportata la prima modifica, l'insieme risultante è "revisione 2", e così via. Ogni revisione è associata a un timestamp e alla persona che ha effettuato la modifica. Le revisioni possono essere confrontate, ripristinate e, con alcuni tipi di file, unite.”
+
+### Cosa sono gli SCM
 - Sono sistemi software
 - Registrano tutte le modifiche avvenute ad un insieme di file
 - Permettono la condivisione di file e modifiche
@@ -65,6 +70,7 @@ Il "Version Database" è gestito in un servizio Cloud
 - Forniscono altri servizi oltre al VCS come text editor online, strumenti visuali, IST
 **Svantaggi**
 - Il codice sorgente non è nel nostro PC o nell'infrastruttura aziendale
+Esempi: GitHub, Bitbucket by Atlassian, Amazon CodeCommit, Visual Studio Online by Microsoft, SourceForge, GitLab, etc.
 # Terminologia
 - Ogni cambiamento di linea su un **singolo** file è chiamato **DIFF**
 - Un insieme di **diffs** validi sono considerati un **COMMIT**
@@ -81,10 +87,10 @@ Il "Version Database" è gestito in un servizio Cloud
 I Workflow che usiamo per gestire i cambiamenti nello sviluppo del codice dipendono dal VCS in uso:
 - **Centralized workflow** semplice e facile da adottare
 - **Feature Branch workflow** utile per isolare codice e concentrarsi sulle features
-	- **GitFLOW workflow** è branchbased for projects
+	- **GitFlow workflow** è leggero, branch-based per progetti
 		- GITHUB model
 		- GITLAB model
-- **FORKING workflow** is ideal for opensource projects
+- **FORKING workflow** è l'ideale per i progetti open-source
 #### Centralized
 - Questo pattern è l'uso naturale di un CVCS come *SVN* o *CVS*
 - È facile da capire e usare, ed è sufficiente in molti casi
@@ -95,28 +101,28 @@ I Workflow che usiamo per gestire i cambiamenti nello sviluppo del codice dipend
 	- L'incapsulamento consente di lavorare senza modificare la main codebase
 	- Consente una collaborazione più semplice 
 	- I conflitti di merge mappano i conflitti concettuali: *più facili da tracciare*
-##### GITFLOW MODEL
+##### GitFlow Model
 - Dedica il (*main*) **master branch** al codice che dev'essere rilasciato
 - Usa un **develop branch** come "*snapshot*" corrente di cosa verrà incluso nella prossima release
 - Crea *feature branches* da develop per ogni nuova funzionalità, che sono soggette a merge di nuovo in develop una volta pronte
 - Quando si è pronti per il rilascio, si effettua il merge su *master* e si assegna un tag con una versione di rilascio
 - Implementazione rigorosa dei branch: *ruoli* per *branch specifici*
 
-##### GITLAB FLOW
+##### GitLab Flow
 Con GitLab Flow, tutte le funzionalità e le correzioni vanno al **MASTER**, prima di passare in *Pre-Production* e *Production*
 ###### GitHub vs GitLab
-**GITHUB**
+**GitHub**
 - Sostiene un approccio di sviluppo veloce e focalizzato sulle caratteristiche per unire i nuovi rami con il ramo master.
 - Questo flusso di lavoro è perfetto per piccoli team e progetti Agile.
 - Il ramo master è sempre pronto per il deploy cosa che ci assicura di poter ripristinare rapidamente lo status quo se qualcosa va storto. Si può tornare alla versione precedente in pochi secondi
-**GITLAB**
+**GitLab**
 - Sostiene un approccio di sviluppo più attento all'affidabilità
-- Nel flusso di lavoro di GitLab, si creano più rami stabili oltre al master, di solito almeno produzione a pre-produzione. Questo significa un processo di test a più fasi in cui una singola revisione del codice sulla richiesta di merge non è sufficiente.
+- Nel flusso di lavoro di GitLab, si creano più rami stabili oltre al master, di solito almeno produzione e pre-produzione. Questo significa un processo di test a più fasi in cui una singola revisione del codice sulla richiesta di merge non è sufficiente.
 - Es. Se avete un team dedicato al QA, è un modo per permettere al vostro team di Ricerca e Sviluppo di lavorare liberamente su nuove funzionalità senza preoccuparsi di testare ogni singolo minuto di cambiamento del codice.
 #### FORK
 - Pattern ereditato da Github/Bitbucket
 - Spinge sul concetto di file system distribuiti
-- Ogni utente *forks* la repo principale e può proporre **pull request** *tra più repo*
+- Ogni utente esegue il *fork* della repository principale e può proporre **pull request** *tra più repository*
 - Authorization management improved
 - Autonomia per un migliore processo di collaborazione
 - Decentralizzato per il nuovi pattern ("*promiscuous integration*")
@@ -133,8 +139,8 @@ Con GitLab Flow, tutte le funzionalità e le correzioni vanno al **MASTER**, pri
 
 ###### Riassuntino:
 - Il codice sorgente di un progetto deve essere versionato in un VCS, che è un sistema software che tiene traccia di tutti i cambiamenti e facilità la condivisione
-- Esistono 2 tipi di VCS: *Centralized and DIstributed VCS*
-- In base alle esigenze e alla conoscenza del team, si può scegliere il workflow pattern più adatto tra: *centralized, Feature Branch, Gitflow, Fork*
+- Esistono 2 tipi di VCS: *Centralized and Distributed VCS*
+- In base alle esigenze e alla conoscenza del team, si può scegliere il workflow pattern più adatto tra: [[#Centralized]], [[#Feature Branch]], [[#GitFlow Model]], [[#FORK]]
 - Per la scelta del servizio da utilizzare (on premisis o cloud) bisogna tenere in considerazione i seguenti fattori:
 	- Backup
 	- Crash

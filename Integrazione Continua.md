@@ -1,7 +1,7 @@
 **Continuos Integration _NON E'_ Build Automation**
 #### Definizione
-Nell'ingegneria del software, la continuos integration è una pratica che si applica in contesti in cui lo sviluppo del software avviene attraverso un sistema di versioning. Consiste **nell'allineamento frequente dagli ambienti di lavoro degli sviluppatori verso l'ambiente condiviso**. Il concetto è stato originariamente proposto nel contesto dell'extreme programming (XP), come contromisura preventiva per il problema dell'integration hell.
-Il CI è stato originarimente concepito per essere complementare rispetto ad altre pratiche, in particolare legate al Test Driven Development. In particolare si suppone generalmente che siano stati predisposti **test automatici** che gli sviluppatori **possono eseguire immediatamente** prima di rilasciare i loro contributi verso l’ambiente condiviso, in modo da garantire che le modifiche non introducano errori nel software esistente. Per questo motivo il CI viene applicato in ambienti in cui siano presenti sistemi di **build automatico** e/o esecuzione automatica di test, come Jenkins.
+Nell'ingegneria del software, la continuous integration è una pratica che si applica in contesti in cui lo sviluppo del software avviene attraverso un sistema di versioning. Consiste **nell'allineamento frequente dagli ambienti di lavoro degli sviluppatori verso l'ambiente condiviso**. Il concetto è stato originariamente proposto nel contesto dell'extreme programming (XP), come contromisura preventiva per il problema dell'integration hell.
+Il CI è stato originariamente concepito per essere complementare rispetto ad altre pratiche, in particolare legate al Test Driven Development. In particolare si suppone generalmente che siano stati predisposti **test automatici** che gli sviluppatori **possono eseguire immediatamente** prima di rilasciare i loro contributi verso l’ambiente condiviso, in modo da garantire che le modifiche non introducano errori nel software esistente. Per questo motivo il CI viene applicato in ambienti in cui siano presenti sistemi di **build automatico** e/o esecuzione automatica di test, come Jenkins.
 ### Motivazioni:
 Per **lunghi periodi di tempo**, durante il processo di sviluppo, **il progetto non è in uno stato funzionante** o in uno stato utilizzabile. Sopratutto in progetti dove si sviluppa in un singolo ramo di sviluppo.
 Nessuno è interessato a provare ad eseguire l'intera applicazione fino a quando non è finito il processo di sviluppo
@@ -9,11 +9,11 @@ In questi progetti spesso viene pianificata la fase di integrazione alla fine de
 ##### Problema (*integration hell*):
 La fase di integrazione può richiedere molto tempo e nel caso peggiore, **nessuno ha modo di prevedere quando terminerà** questa fase e di conseguenza quando l'applicazione può essere rilasciata.
 #### Definizione
-*"Continuos Integration doesn't get rid of bugs, but it does make them dramatically easier to find and remove." (Martin Fowler)*
+*"Continuous Integration doesn't get rid of bugs, but it does make them dramatically easier to find and remove." (Martin Fowler)*
 Consente a un Team di intensificare l'attività di sviluppo e test, **integrando gli sviluppi _(nel VCS)_ il più spesso possibile.**
 ![[Screenshot 2024-05-07 alle 20.29.11.png]]
 ### Processo - visione generale
-- Al **completamento** di un'attività viene **costuito il prodotto:**
+- Al **completamento** di un'attività viene **costruito il prodotto:**
 	- Ogni volta che uno sviluppatore invia un commit al VCS viene eseguito il processo di build
 - Se il processo di costruzione **fallisce l'attività non continua** fino a che il prodotto non viene riparato
 - Se **non è possibile riparare** il prodotto immediatamente (*in pochi minuti*) si **ritorna all'ultima versione funzionante**
@@ -70,12 +70,12 @@ Lo stato della build deve essere pubblicato in un servizio visibile a tutto il t
 - Identificare chi ha introdotto l'errore
 - Avere a disposizione un log per identificare quale parte del processo di build è fallita
 - Avere a disposizione la lista dei commit che hanno introdotto l'errore
-Il sistema di continous integration deve poter avvisare i componenti del team ad ogni cambio di stato del processo. (*da successo a fallimento, da fallimento a successo*)
+Il sistema di continuous integration deve poter avvisare i componenti del team ad ogni cambio di stato del processo. (*da successo a fallimento, da fallimento a successo*)
 ![[Screenshot 2024-05-10 alle 14.54.35.png]]
 #### Principali caratteristiche di Jenkins
 - **Build Automation:** può automatizzare la costruzione del software attraverso script, facilitando la creazione di build consistenti e ripetibili
 - **Trigger Automatici:** può essere configurato per avviare automaticamente una build in base a eventi come il commit di codice su un repository, modifiche a determinati file, o in un momento prestabilito
-- **Test Automation:** Jenkins può eseguire automaticamente test unitari, test di integrazione e altri test ogni volta che viene eseguita una build , aiutando a identificare i problemi rapidamente
+- **Test Automation:** Jenkins può eseguire automaticamente test unitari, test di integrazione e altri test ogni volta che viene eseguita una build, aiutando a identificare i problemi rapidamente
 - **Integrazione con VCS:** si integra con vari sistemi di controllo del codice sorgente, permettendo di monitorare e utilizzare le modifiche al codice per innescare build
 - **Notifiche e Reportistica:** può inviare notifiche per informare il team dei risultati delle build e generare report dettagliati sulle esecuzioni e sui test
 - **Configurazione semplice delle Pipeline:** Utilizzando Jenkinsfile, le pipeline CI possono essere configurate e versionate insieme al codice sorgente, consentendo un approcio "*Infrastructure as Code*"
@@ -84,7 +84,7 @@ Il sistema di continous integration deve poter avvisare i componenti del team ad
 - **Scalabilità e Flessibilità :** può essere scalato orizzontalmente con più nodi di build, e le pipeline possono essere personalizzate in base a esigenze specifiche, fornendo grande flessibilità 
 - **Sicurezza e Permessi:** Jenkins permette di configurare ruoli e permessi specifici per utenti e gruppi assicurando che solo gli utenti autorizzati possano avviare, modificare o visualizzare le buid.
 ### Pipeline
-**Una pipeline in Jenkins è una serie di fasi o passaggi** che rappresentano il processo di continous integration (CI) e continous delivery (CD) per un progetto software. È uno strumento potente e flessibile che consente di automatizzare il flusso di lavoro di sviluppo, test e distribuzione del software.
+**Una pipeline in Jenkins è una serie di fasi o passaggi** che rappresentano il processo di continuous integration (CI) e continuous delivery (CD) per un progetto software. È uno strumento potente e flessibile che consente di automatizzare il flusso di lavoro di sviluppo, test e distribuzione del software.
 - **Concetto di Pipeline:**
 	- Una pipeline è un insieme di fasi (*stages*) che descrivono le attività necessarie per costruire, testare, e distribuire il software. Le pipeline in Jenkins sono definite utilizzando un linguaggio di script, spesso scritto in formato "as code" con un file chiamato "Jenkinsfile"
 - **Fasi (_Stages_) e Passaggi (_Steps_)
