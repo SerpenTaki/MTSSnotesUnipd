@@ -3,10 +3,8 @@ Il **software testing** è un'indagine condotta per fornire alle parti interessa
 Il software testing può anche fornire una visione obiettiva e indipendente del software, permettendo all'azienda di analizzare e comprendere il rischio dell'implementazione del software.
 
 Le tecniche di test includono il processo di esecuzione di un programma o applicazione con l'intento di **trovare bug nel software** (errori o altri difetti) e di verificare che il **prodotto software sia adatto all'uso**.
-
 # Definizione
 Il **processo** costituito da tutte le attività di lifecycle, sia **statiche** che **dinamiche**, relative alla pianificazione, preparazione e valutazione dei prodotti software e dei prodotti correlati per **determinare che soddisfano i requisiti specificati**, per dimostrare che sono **adatti allo scopo** e **rilevare difetti**.
-
 ## Perché?
 - L'uomo non è perfetto
 - Il codice è scritto da uomini
@@ -40,7 +38,6 @@ Il **processo** costituito da tutte le attività di lifecycle, sia **statiche** 
 	Convalidare che il software sia conforme ai suoi obiettivi (*fit for purpose*)
 **Validazione:**
 	Il prodotto è stato realizzato rispettando le specifiche dell'utente (*requisiti*)
-
 #### Definizione di caso di test
 **IEE Standard 610:**
 - **Test Case:** A set of input values, execution preconditions, expected results and execution post-conditions, developed for a particular objective or test condition, such as to exercise a particular program path or to compliance with a specific requirement
@@ -48,10 +45,8 @@ Il **processo** costituito da tutte le attività di lifecycle, sia **statiche** 
 - **Test Case** (2018): A set of preconditions, input, actions, expected results and post-conditions, developed based on test conditions.
 - **Test Conditions** (2018): An item or event of a component or system that could be verified by **one or more** test cases, e.g. a function, feature, quality, attribute, or structural element.
 Ricorda: Non esiste test case, se non esiste il corrispondente requisito da valutare.
-
 I casi di test aiutano anche a ridurre l'ambiguità nei requisiti (funzionali e non funzionali), e quindi ne migliorano la descrizione, e in ultima analisi la documentazione: si parla di testable  
 essere eseguiti automaticamente in catene CI/CD.
-
 # Processo di test
 1. **Test planning** -> L'attività di stabilire o aggiornare un test plan.
 2. **Test control** -> Azioni correttive e di controllo se il piano non viene rispettato
