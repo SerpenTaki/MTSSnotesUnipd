@@ -15,5 +15,3 @@
 - [[Artifact Repository]]
 - [[Ansible]]
 - [[Container]]
-- [[Artifact Repository]]
-- [[Ansible]]

@@ -167,7 +167,7 @@ Sono gli Item che compongono il Product Backlog e andranno scomposte in Task
 Definisce il significato di "FATTO" per uno Sprint Item
 - Il minimo set i attività per definire che un'attività è completata 
 - Può variare per gruppo di lavoro 
-- Deve essere bene chiaro per tutti i membri del gruppo di lavoro 
+- Deve essere ben chiaro per tutti i membri del gruppo di lavoro 
 - È utilizzato per verificare se un'attività è da ritenersi completata 
 ![[Pasted image 20240323161714.png]]
 #### Acceptance criteria
