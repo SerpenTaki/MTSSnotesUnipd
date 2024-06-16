@@ -95,7 +95,6 @@ I Workflow che usiamo per gestire i cambiamenti nello sviluppo del codice dipend
 - Questo pattern è l'uso naturale di un CVCS come *SVN* o *CVS*
 - È facile da capire e usare, ed è sufficiente in molti casi
 - La collaborazione è bloccata quando il server centralizzato è inattivo o la cronologia è danneggiata
-
 #### Feature Branch
 - Obiettivi di questo pattern: l'uso di **un solo** branch **per feature (DVCS)**
 	- L'incapsulamento consente di lavorare senza modificare la main codebase
@@ -107,7 +106,6 @@ I Workflow che usiamo per gestire i cambiamenti nello sviluppo del codice dipend
 - Crea *feature branches* da develop per ogni nuova funzionalità, che sono soggette a merge di nuovo in develop una volta pronte
 - Quando si è pronti per il rilascio, si effettua il merge su *master* e si assegna un tag con una versione di rilascio
 - Implementazione rigorosa dei branch: *ruoli* per *branch specifici*
-
 ##### GitLab Flow
 Con GitLab Flow, tutte le funzionalità e le correzioni vanno al **MASTER**, prima di passare in *Pre-Production* e *Production*
 ###### GitHub vs GitLab

@@ -32,7 +32,7 @@ Un file in GIT può essere in uno dei seguenti stati:
 - **Unmodified**: File non modificato rispetto alla versione precedente
 - **Modifed**: Modificato nella working directory
 - **Staged**: salvata una snapshot nella Staging Area
-- **Commited**: presso dalla Staging Area e salvato nel repository locale
+- **Commited**: preso dalla Staging Area e salvato nel repository locale
 ## Installazione di Git
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 ## Configurazione di Git
