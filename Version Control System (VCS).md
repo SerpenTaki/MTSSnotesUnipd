@@ -26,19 +26,21 @@ I **VCS** possono essere classificati in 3 tipologie:
 - Distribuiti
 #### Local VCS
 *Molte persone gestiscono le diverse versioni copiando i file in un'altra directory (magari denominata con la data). Questo approccio è comune perché molto semplice ma soggetto ad errori. è facile dimenticare in quale directory sei e modificare il file sbagliato o copiare dei file che non volevi copiare*
-- **I tool più vecchi**
+
+- Sono i **tool più vecchi**
 - Registrano **solo** la storia dei cambiamenti
-	- Utilizzano un "Version Database" dove viene registrata la storia di tutti i file
+	- Utilizzano un *Version Database* dove viene registrata la storia di tutti i file
 	- Salva sul disco una serie di *patch* (_differenze tra file_) tra una versione e l'altra
 	- è possibile ricreare lo stato di qualsiasi file in qualsiasi momento
 - **Non gestiscono la condivisione**
 #### Centralized VCS (CVCS)
 - Meno vecchi e **molto diffusi**
-- Gestiscono sia la **condivisione** che il tracciamento della storia:
+- Gestiscono sia la **condivisione** che il **tracciamento** della storia:
 	- La storia è gestita come nel **Local VCS**
 	- Il "*Version Database*" è gestito in un **server centrale (_singolo punto di rottura_)**
 - Ogni sviluppatore è un client che ha nel suo spazio di lavoro **solo una versione** del codice
 - Facili da apprendere
+**SVN** è un CVCS. 
 #### Distributed VCS (DVCS)
 - Simili ai CVCS ma il "Version Database" **è distribuito per duplicazione in ogni nodo**
 	- Quando il **nodo centrale non è disponibile, è possibile continuare a lavorare** e registrare i cambiamenti
@@ -69,8 +71,8 @@ Il "Version Database" è gestito in un servizio Cloud
 - **Si delega la gestione** (e l'installazione) ad un servizio esterno
 - Forniscono altri servizi oltre al VCS come text editor online, strumenti visuali, IST
 **Svantaggi**
-- Il codice sorgente non è nel nostro PC o nell'infrastruttura aziendale
-Esempi: GitHub, Bitbucket by Atlassian, Amazon CodeCommit, Visual Studio Online by Microsoft, SourceForge, GitLab, etc.
+- Il codice sorgente non è nel nostro PC o nell'infrastruttura aziendale, ma è ospitato nei server del servizio Cloud in questione.
+Esempi: GitHub, BitBucket by Atlassian, Amazon CodeCommit, Visual Studio Online by Microsoft, SourceForge, GitLab, etc.
 # Terminologia
 - Ogni cambiamento di linea su un **singolo** file è chiamato **DIFF**
 - Un insieme di **diffs** validi sono considerati un **COMMIT**
@@ -114,13 +116,13 @@ Con GitLab Flow, tutte le funzionalità e le correzioni vanno al **MASTER**, pri
 **GitHub**
 - Sostiene un approccio di sviluppo veloce e focalizzato sulle caratteristiche per unire i nuovi rami con il ramo master.
 - Questo flusso di lavoro è perfetto per piccoli team e progetti Agile.
-- Il ramo master è sempre pronto per il deploy cosa che ci assicura di poter ripristinare rapidamente lo status quo se qualcosa va storto. Si può tornare alla versione precedente in pochi secondi
+- Il ramo master è sempre pronto per il deploy (rilascio) cosa che ci assicura di poter ripristinare rapidamente lo status quo se qualcosa va storto. Si può tornare alla versione precedente in pochi secondi
 **GitLab**
 - Sostiene un approccio di sviluppo più attento all'affidabilità
 - Nel flusso di lavoro di GitLab, si creano più rami stabili oltre al master, di solito almeno produzione e pre-produzione. Questo significa un processo di test a più fasi in cui una singola revisione del codice sulla richiesta di merge non è sufficiente.
-- Es. Se avete un team dedicato al QA, è un modo per permettere al vostro team di Ricerca e Sviluppo di lavorare liberamente su nuove funzionalità senza preoccuparsi di testare ogni singolo minuto di cambiamento del codice.
+- Es. Se avete un team dedicato al QA (quality assurance), è un modo per permettere al vostro team di Ricerca e Sviluppo di lavorare liberamente su nuove funzionalità senza preoccuparsi di testare ogni singolo minuto di cambiamento del codice.
 #### FORK
-- Pattern ereditato da Github/Bitbucket
+- Pattern ereditato da GitHub/BitBucket
 - Spinge sul concetto di file system distribuiti
 - Ogni utente esegue il *fork* della repository principale e può proporre **pull request** *tra più repository*
 - Authorization management improved

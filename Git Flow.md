@@ -13,7 +13,7 @@ il programma chiede
 
 Per iniziare una feature:
 ```
-git-flow feature start nome_feature
+git flow feature start nome_feature
 ```
 
 analogamente con `finish` al posto di `start` per terminare la feature. 

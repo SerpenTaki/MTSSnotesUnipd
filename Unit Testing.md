@@ -63,6 +63,7 @@ Se il test è indipendente il suo comportamento sarà ripetibile nel tempo, perc
 ##### Professional
 Poiché i test di unità sono codice, devono essere **scritti e manutenuti con la stessa professionalità del codice di produzione** del progetto.
 Visto che i buoni test di unità devono essere esaustivi, è ragionevole che il **numero di linee di codice** per realizzare i test sia **pari o a volte superiore** delle linee di codice in produzione.
+
 ![[Screenshot 2024-04-18 alle 17.58.07.png]]
 ## Caratteristiche del framework
 Per creare i test di unità si sfruttano dei framework, con le seguenti caratteristiche:

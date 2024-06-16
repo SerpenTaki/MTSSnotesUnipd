@@ -99,16 +99,16 @@ Vengono registrate e possono essere utilizzate come criterio di ricerca. Questo 
 	
 ![[Pasted image 20240227183528.png]]
 ##### Configurazione
-**Admin** ITS: 
+###### Admin ITS:
 - Crea un nuovo progetto
 - Definisce il processo da seguire:
 	- Tipi di *Work Item*, campi custom, work flow, collegamenti
 	- Seleziona il modello di stima
 	- Differenti Board e Report per processo
 - Aggiunge gli utenti e assegnazione ruoli/permessi
-**Capoprogetto:**
+###### Capo progetto
 - Definisce le versioni (*release*)
-- Definisce le componenti del progetto
+- Definisce le componenti del progetto (attribuisce un ruolo)
 - Definisce il lavoro da svolgere (*backlog*)
 	- Priorità
 	- Assegnatario
@@ -119,16 +119,16 @@ Vengono registrate e possono essere utilizzate come criterio di ricerca. Questo 
 - Definisce le nuove iterazioni
 - Definisce e aggiorna e monitora le attività (*priorità, verifica stima/consuntivo*)
 - Produce i report richiesti dal cliente (*p.es. Calcolo SLA, release log, qualità delle versioni o dei componenti...*)
-**Team di sviluppo e utenti**:
+###### Team di sviluppo e utenti
 - Ricevono notifiche dei *Work Item* assegnati
 - Selezionano i *Work Item* in base alle priorità
 - Avviano e completano la lavorazione
 	- Avanzano gli stati del workflow
-	- Aggiornano la stima a finire
+	- Aggiornano la stima a finire tramite le previsioni basate sul tempo di sviluppo di ogni attività.
 	- Registrano il tempo impiegato
 - Documentano lo stato dell'attività (*commenti*) e compilano i campi nel Work Item
 - Completano tutte le attività presenti nell'iterazione
-- Effettuano il rilascio
+- **Effettuano il rilascio**
 ### ITS Benefici
 - Implementare un processo e verificarne l'adozione
 - Migliorare e misurare la qualità del progetto
