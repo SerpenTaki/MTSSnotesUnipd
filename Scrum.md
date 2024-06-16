@@ -38,7 +38,6 @@ Le fasi di _requisiti_, _progetto_, _codifica_ e _test_ che si verificano nel fr
 **Non si cambia durante lo Sprint**:  una volta che sono stati fissati i goal dello sprint, nel 99% dei casi nello sprint si sviluppa una certa funzionalità, se si interrompe si va ad allungare i tempi. 
 
 ![[Pasted image 20240323154500.png]]
-
 ##### Revisione e rischi Sprint 
 - Lo Sprint backlog può essere chiarito e rinegoziato tra il Product Owner e il team di sviluppo non appena si conosce di più
 - La durata dello Sprint assicura che il rischio di scostarsi da quanto chiesto dal product owner sia limitato alla durata dello sprint
@@ -89,11 +88,9 @@ Si tratta di un incontro giornaliero di 15 minuti, è un evento veloce che si sv
 - Si aggiorna la scrumboard
 - Aiuta a evitare altre riunioni non necessarie 
 - Solitamente si chiede
-
 	- Cos'hai fatto ieri 
 	- Cos'hai fatto oggi
 	- C'è qualcosa che ti impedisce di farlo? 
-	
 **Non è un SAL** (servant leader) per lo *Scrum Master* che non partecipa. Sono impegni assunti tra pari (*Development Team*)
 #### Sprint review
 È sempre un evento _Time boxed_, ossia circa 4 ore per Sprint di un mese
@@ -114,10 +111,9 @@ Si tratta di un incontro giornaliero di 15 minuti, è un evento veloce che si sv
 	- Che miglioramenti possiamo apportare al prossimo Sprint?
 - Partecipa tutto il gruppo i lavoro, è una riunione interna, il product owner è escluso. 
 	- Scrum master
-	- Product owner
 	- Development Team
 ![[Pasted image 20240323160300.png]]
-### Artifatti
+### Artefatti
 ##### Product Backlog
 - I requisiti, funzionalità, miglioramenti, fix da realizzare nei prossimi rilasci
 -  Una lista di tutti i “desiderati"
