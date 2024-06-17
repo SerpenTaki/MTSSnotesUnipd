@@ -14,7 +14,7 @@ Git è nato per essere un semplice strumento per facilitare lo **sviluppo del** 
 	- Ogni commit è identificato da un ID (_checksum **SHA-1** di **40 caratteri** basato sul contenuto di file o della struttura della directory_) che ne garantisce l'integrità
 	- Non è possibile cambiare un commit senza modificare l'ID del commit stesso e dei commit successivi
 - **Staging Area**:
-	- È stata aggiunta un'area di staging dove vengono validati i file modificati che potranno essere versionati con un commit.
+	- È stata aggiunta un'area di staging dove vengono validati i file modificati che potranno essere versionati con un commit. È utile se sono state effettuate svariate modifiche riguardanti aspetti differenti del progetto, in questo modo si mantiene il repository più ordinato.
 - **Free and Open Source**
 	- È rilasciato con licenza *GNU General Public License version 2.0*
 	- Il codice sorgente è pubblico

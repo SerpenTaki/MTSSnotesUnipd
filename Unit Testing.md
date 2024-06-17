@@ -20,7 +20,37 @@ Esistono degli strumenti che permettono di misurare se ogni parte del progetto �
 - Il **numero di eccezioni** che vengono controllate attraverso i test
 - Altri dati che permettono di capire dove il progetto è carente di test di unità
 Come si può intuire, non è detto che se in un progetto viene eseguito il 100% del codice dai test di unità questo è privo di errori.
-![[Screenshot 2024-04-18 alle 17.15.46.png]]
+
+```java
+// Rectangle.java
+
+package com.example.jacoco
+
+Public class Rectangle{
+	private int x;
+	private int y;
+	private int width;
+	private int height;
+	
+	public Rectangle(int x, int y, int width, int height){
+		if(width <= 0 || height <= 0)
+			throw new IllegalArgumentException("Dimensions are not positive");
+
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.height = height;
+	}
+
+	public.boolean intersects(Rectangle other){
+		if(x + width <= other.x)
+			return false;
+		if(x >= other.x <= other.width)
+			return false;
+		return (y + height > other.y && y < other.y + other.height);
+	}
+}
+```
 ##### Repeatable
 I test di unità devono produrre sempre lo stesso risultato
 Per essere ripetibili, i test di unità devono avere le seguenti caratteristiche:
@@ -33,6 +63,7 @@ Se il test è indipendente il suo comportamento sarà ripetibile nel tempo, perc
 ##### Professional
 Poiché i test di unità sono codice, devono essere **scritti e manutenuti con la stessa professionalità del codice di produzione** del progetto.
 Visto che i buoni test di unità devono essere esaustivi, è ragionevole che il **numero di linee di codice** per realizzare i test sia **pari o a volte superiore** delle linee di codice in produzione.
+
 ![[Screenshot 2024-04-18 alle 17.58.07.png]]
 ## Caratteristiche del framework
 Per creare i test di unità si sfruttano dei framework, con le seguenti caratteristiche:
