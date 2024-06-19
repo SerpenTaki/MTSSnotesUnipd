@@ -25,7 +25,6 @@ Per implementare la pratica di CI è necessario che:
 3. Il processo di build esegua delle **verifiche automatiche** (*test di unità, test di integrazione, analisi statica del codice*)
 4. il team di sviluppo adotti correttamente questa pratica
  ![[Screenshot 2024-05-10 alle 13.17.34.png]]
-
 ### Processo in dettaglio
 1. Controllo se il processo di build è in esecuzione nel sistema di CI. Se è in esecuzione aspetto che finisca, se fallisce lavoro con il team in modo da sistemare il problema.
 2. Quando il processo di build ha terminato con successo, aggiorno il codice nel mio workspace con il codice del VCS ed effetuo l'integrazione in locale
